@@ -2,3 +2,13 @@
 .position{
     position: relative;
 }
+
+@font-face {
+    font-family: 'iconfont';  /* project id 1856834 */
+    src: url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.eot');
+    src: url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1856834_0xx586jiqdli.svg#iconfont') format('svg');
+  }

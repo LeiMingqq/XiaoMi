@@ -313,3 +313,18 @@ header .BannerWrapper a{
     border-color: #b0b0b0;
 }
 /* 头部区域结束 */
+
+/* 身体区域开始 */
+/* 导航栏--轮播图开始 */
+.nav-rotation{
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    background-color: red;
+}
+
+/* 导航栏--轮播图结束 */
+/* 身体区域结束 */

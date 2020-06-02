@@ -99,6 +99,7 @@ header .BannerWrapper a{
 }
 .navigtion .nav .nav-left .position div{
     position: absolute;
+    z-index: 1;
     width: 124px;
     height: 0px;
     top: 40px;
@@ -168,6 +169,7 @@ header .BannerWrapper a{
 
 .navigtion .nav .nav-right .cart .position .cart-content{
     position: absolute;
+    z-index: 1;
     right: 0;
     width: 316px;
     height: 0px;

@@ -1,5 +1,5 @@
 /* iocn图标地址 */
-@import "//at.alicdn.com/t/font_1856834_0xx586jiqdli.css";
+@import "//at.alicdn.com/t/font_1856834_aa3wuldbc5c.css";
 /* 图标属性 */
 /* 购物车 */
 .iconfont.icon-xiazai1{
@@ -322,8 +322,99 @@ header .BannerWrapper a{
     height: 460px;
     margin: 0 auto;
     /* 溢出隐藏 */
-    overflow: hidden;
-    background-color: red;
+    /* overflow: hidden; */
+}
+.nav-rotation .body-rotation-img .img-ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 460px;
+    opacity: 0;
+    transition: all 1s;
+}
+.nav-rotation .body-rotation-img .img-ul li a img{
+    width: 1226px;
+    height: 460px;
+}
+.nav-rotation .body-rotation-img .img-ul .img-active{
+    opacity: 1;
+}
+.nav-rotation .body-rotation-img .rotation-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 234px;
+    height: 460px;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul{
+    padding: 20px 0;
+    color: #fff;
+    background: rgba(105,101,101,.6);
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul li .rotation-nav-a{
+    position: relative;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul>li:hover{
+    background-color: #ff6700;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul li:hover i{
+    color: hsla(0,0%,100%,.5);
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul li i{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #e0e0e0;
+}
+
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .rotation-list1:hover .children-cont{
+    display: flex;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont{
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    height: 458px;
+    /* 弹性盒子排序 */
+    display: flex;
+    /* 隐藏 */
+    display: none;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul{
+    /* width: 248px; */
+    height: 458px;
+    padding: 2px 0;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul li{
+    position: relative;
+    float: left;
+    height: 76px;
+    width: 248px;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul li a{
+    display: flex;
+    width: 265px;
+    /* 在盒子内填充 */
+    box-sizing: border-box;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul li a:hover span{
+    color: #ff6700;
+}
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul li a img{
+    margin-right: 12px;
 }
 
 /* 导航栏--轮播图结束 */

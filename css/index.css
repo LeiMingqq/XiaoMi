@@ -319,7 +319,6 @@ header .BannerWrapper a{
 .nav-rotation{
     position: relative;
     width: 1226px;
-    height: 460px;
     margin: 0 auto;
     /* 溢出隐藏 */
     /* overflow: hidden; */
@@ -416,6 +415,82 @@ header .BannerWrapper a{
 .nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont ul li a img{
     margin-right: 12px;
 }
-
+/* 轮播图下面部分 */
+.nav-rotation .nav-rotation-bottom{
+    margin-top: 14px;
+    height: 170px;
+    display: flex;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left{
+    width: 234px;
+    height: 170px;
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #5f5750;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li{
+    float: left;
+    position: relative;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li::before{
+    content: "";
+    width: 64px;
+    height: 1px;
+    position: absolute;
+    left: 6px;
+    top: -1px;
+    background-color: #665e57;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li::after{
+    content: "";
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    background-color: #665e57;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li a{
+    opacity: .7;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+    display: block;
+    color: #fff;
+    transition: opacity .2s;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li a:hover{
+    opacity: 1;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-left ul li a img{
+    padding-top: 18px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 4px;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-img{
+    width: 978px;
+    height: 170px;
+    margin-left: 14px;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-img ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-img a{
+    display: block;
+    transition: all 0.5s;
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-img a:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.nav-rotation .nav-rotation-bottom .nav-bottom-img a img{
+    display: block;
+    width: 316px;
+    height: 170px;
+}
 /* 导航栏--轮播图结束 */
 /* 身体区域结束 */

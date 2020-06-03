@@ -374,7 +374,7 @@ header .BannerWrapper a{
     color: #e0e0e0;
 }
 
-.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .rotation-list1:hover .children-cont{
+.nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .rotation-list:hover .children-cont{
     display: flex;
 }
 .nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont{

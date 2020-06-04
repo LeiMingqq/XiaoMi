@@ -417,7 +417,7 @@ header .BannerWrapper a{
 }
 /* 轮播图下面部分 */
 .nav-rotation .nav-rotation-bottom{
-    margin-top: 14px;
+    margin: 14px auto 26px;
     height: 170px;
     display: flex;
 }
@@ -493,4 +493,153 @@ header .BannerWrapper a{
     height: 170px;
 }
 /* 导航栏--轮播图结束 */
+
+/* 中心部分开始 */
+.home-main{
+    padding-top: 4px;
+    padding-bottom: 12px;
+    background-color: #f5f5f5;
+}
+.home-main .container{
+    width: 1226px;
+    margin: 0 auto;
+}
+.home-main .container .home-flashsale {
+    margin-bottom: 22px;
+}
+.home-main .container .home-flashsale .box-hd h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+
+.home-main .container .home-flashsale .box-rotation{
+    position: relative;
+    width: 1226px;
+    height: 340px;
+    display: flex;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left{
+    /* 上面画一条线 */
+    border-top: 1px solid #e53935;
+    padding-top: 39px;
+    width: 234px;
+    height: 300px;
+    text-align: center;
+    background-color: #f1eded;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left .round{
+    font-size: 21px;
+    color: #ef3a3b;
+    padding-top: 15px;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left img{
+    margin: 25px auto;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left .desc{
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+.home-main .container .home-flashsale .box-rotation .rt-left .countdown{
+    width: 168px;
+    margin: 28px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left .countdown span{
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+    display: block;
+}
+.home-main .container .home-flashsale .box-rotation .rt-left .countdown i{
+    width: 15px;
+    height: 46px;
+    line-height: 46px;
+    color: #605751;
+    font-size: 28px;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation{
+    width: 978px;
+    margin-left: 14px;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul{
+    display: flex;
+    justify-content: space-between;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a{
+    border-top: 1px solid #008c8c;
+    display: block;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    padding-top: 39px;
+    background-color: #fff;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a .content img{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 22px;
+    display: block;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a .content h3{
+    margin: 0 20px 3px;
+    color: #212121;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a .content .prit{
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a .content p span{
+    color: #ff6700;
+}
+.home-main .container .home-flashsale .box-rotation .rt-rotation ul li>a .content p del{
+    color: #b0b0b0;
+}
+/* 轮播图按钮 */
+.home-main .container .home-flashsale .box-rotation .rt-button{
+    position: absolute;
+    right: 0;
+    top: -33px;
+    display: flex;
+}
+.home-main .container .home-flashsale .box-rotation .rt-button span{
+    padding: 3px 5px;
+    width: 24px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #e0e0e0;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    transition: color .5s;
+}
+.home-main .container .home-flashsale .box-rotation .rt-button span:hover{
+    color: #ff6700;
+}
+
+/* 小广告-天天向上 */
+.home-banner-box{
+    height: 120px;
+    margin: 22px 0;
+    overflow: hidden;
+}
+.home-banner-box a{
+    display: block;
+    height: 120px;
+}
+/* 中心部分接收 */
 /* 身体区域结束 */

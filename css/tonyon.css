@@ -1,8 +1,89 @@
-/* 通用样式 */
+/* 通用样式开始 */
 .position{
     position: relative;
 }
 
+/* 居中对齐 */
+.container{
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.box-hd h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.box-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.box-hd .more a{
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    transition: all .3s;
+}
+/* 稍微修改了一下 */
+.box-hd .more .tab-list{
+    display: flex;
+    font-size: 16px;
+    color: #424242;
+    transition: all .3s;
+}
+.box-hd .more .tab-list li{
+    margin-left: 30px;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: border .3s;
+}
+.box-hd .more .tab-list .tab-active{
+    border-color: #ff6700;
+    color: #ff6700;
+}
+
+/* 卡片标签 */
+.bd-list>a{
+    display: block;
+    text-align: center;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.content img{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 22px;
+    display: block;
+}
+.content h3{
+    margin: 0 20px 3px;
+    color: #212121;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content .prit{
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.content p span{
+    color: #ff6700;
+}
+.content p del{
+    color: #b0b0b0;
+}
+
+/* 通用样式接收 */
 @font-face {
     font-family: 'iconfont';  /* project id 1856834 */
     src: url('//at.alicdn.com/t/font_1856834_aa3wuldbc5c.eot');

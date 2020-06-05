@@ -1,5 +1,5 @@
 /* iocn图标地址 */
-@import "//at.alicdn.com/t/font_1856834_aa3wuldbc5c.css";
+@import "//at.alicdn.com/t/font_1856834_ika0cnu9jzm.css";
 /* 图标属性 */
 /* 购物车 */
 .iconfont.icon-xiazai1{
@@ -744,6 +744,7 @@ header .BannerWrapper a{
 
 .home-brick-box  .box-bd{
     display: flex;
+    height: 628px;
 }
 .home-brick-box  .box-bd li{
     transition: all .4s;
@@ -768,14 +769,17 @@ header .BannerWrapper a{
 }
 /* 末尾的两个卡片 */
 .home-brick-box  .box-bd .bd-right ul li .behind{
-    background-color: red;
-    overflow: hidden;
     width: 234px;
+}
+/* 设置最后一个li元素没有效果 */
+.home-brick-box  .box-bd .bd-right .bd-hehien .bd-list:last-of-type:hover{
+    box-shadow: none;
+    transform: none;
 }
 .home-brick-box  .box-bd .bd-right ul li .behind li{
     margin-left: 0;
 }
-.home-brick-box  .box-bd .bd-right ul li .behind .behind-top a{
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-item a{
     position: relative;
     display: block;
     background-color: #fff;
@@ -792,18 +796,42 @@ header .BannerWrapper a{
     bottom: 0;
     margin: auto;
 }
-.home-brick-box  .box-bd .bd-right ul li .behind .behind-top a h3{
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-item a h3{
     color: #333;
     margin: -10px 110px 5px 30px;
     font-size: 14px;
 }
-.home-brick-box  .box-bd .bd-right ul li .behind .behind-top a p{
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-item a p{
     margin: 0 110px 0 30px;
     font-size: 12px;
     color: #ff6700;
 }
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-item a p span{
+    font-size: 14px;
+}
 .home-brick-box  .box-bd .bd-right ul li .behind .behind-bottom{
     background-color: #2196f3;
+}
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-bottom i{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: 48px;
+    color: #ff6700;
+}
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-bottom a p{
+    display: block;
+    margin: 0 110px 0 30px;
+    font-size: 18px;
+    color: #333;
+}
+.home-brick-box  .box-bd .bd-right ul li .behind .behind-bottom a p span{
+    display: block;
+    font-size: 12px;
+    color: #757575;
 }
 /* 中心部分接收 */
 /* 身体区域结束 */

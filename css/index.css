@@ -1,5 +1,6 @@
 /* iocn图标地址 */
-@import "//at.alicdn.com/t/font_1856834_ika0cnu9jzm.css";
+/* @import "//at.alicdn.com/t/font_1856834_qab86abozn8.css"; */
+@import "./iconfont.css";
 /* 图标属性 */
 /* 购物车 */
 .iconfont.icon-xiazai1{
@@ -121,7 +122,7 @@ header .BannerWrapper a{
     float: right;
     height: 40px;
     line-height: 40px;
-    color: #b0b0b0;
+    color: #424242;
 }
 
 .navigtion .nav .nav-right span{
@@ -198,7 +199,6 @@ header .BannerWrapper a{
     margin-top: 22px;
 }
 .navigtion-two .container .header-log h1 a{
-    position: relative;
     width: 55px;
     height: 55px;
     /* 隐藏文字 */
@@ -217,6 +217,7 @@ header .BannerWrapper a{
     height: 55px;
     display: block;
     background: url("../img/mi-home.png") no-repeat 50% 50%;
+    transition: all .3s;
 }
 .navigtion-two .container .header-log h1 a::before{
     position: absolute;
@@ -227,6 +228,13 @@ header .BannerWrapper a{
     height: 55px;
     display: block;
     background: url("../img/mi-logo.png") no-repeat 50% 50%;
+    transition: all .3s;
+}
+.navigtion-two .container .header-log h1 a:hover::after{
+    right: 0;
+}
+.navigtion-two .container .header-log h1 a:hover::before{
+    left: 55px;
 }
 
 .navigtion-two .container .header-nav{
@@ -308,26 +316,31 @@ header .BannerWrapper a{
 }
 /* 导航栏下部分-轮播图 */
 .navigtion-two .container-rotation{
+    transform: translateY(-500px);
     position: absolute;
     overflow: hidden;
-    display: none;
+    /* display: none; */
     z-index: 2;
     width: 100%;
     height: 0;
-    transition: all 1s;
+    transition: height 1s .2s;
+    /* opacity: 0; */
     border-top: 1px solid #e0e0e0;
     background-color: #fff;
     box-shadow: 0 3px 4px rgba(0,0,0,.18);
 }
 .navigtion-two:hover .container-rotation{
+    transform: translateY(0px);
     height: 230px;
-    display: block;
+    /* display: block; */
+    /* opacity: 1; */
 }
 .navigtion-two .container-rotation ul{
     display: flex;
     font-size: 12px;
     transition: all 1s;
     margin-left: 0%;
+    overflow: hidden;
 }
 .navigtion-two .container-rotation ul li a{
     position: relative;
@@ -378,6 +391,10 @@ header .BannerWrapper a{
     opacity: 0;
     transition: all 1s;
 }
+.nav-rotation .body-rotation-img .img-ul li a{
+    display: block;
+    height: 460px;
+}
 .nav-rotation .body-rotation-img .img-ul li a img{
     width: 1226px;
     height: 460px;
@@ -425,6 +442,8 @@ header .BannerWrapper a{
 }
 .nav-rotation .body-rotation-img .rotation-nav .rotation-nav-ul .children-cont{
     position: absolute;
+    /* 层次 */
+    z-index: 1;
     top: 0px;
     left: 234px;
     height: 458px;
@@ -507,6 +526,11 @@ header .BannerWrapper a{
 }
 .nav-rotation .body-rotation-img .rotation-icon .icon span:hover{
     background: hsla(0,0%,100%,.4);
+    border-color: rgba(0,0,0,.4);
+}
+.nav-rotation .body-rotation-img .rotation-icon .icon .icon-active{
+    background: hsla(0,0%,100%,.4);
+    border-color: rgba(0,0,0,.4);
 }
 /* 轮播图下面部分 */
 .nav-rotation .nav-rotation-bottom{
@@ -833,5 +857,308 @@ header .BannerWrapper a{
     font-size: 12px;
     color: #757575;
 }
+/* 视频卡片标签 */
+.home-brick-box .video .video-ul{
+    display: flex;
+    justify-content: space-between;
+}
+/* 相对定位 */
+.video-relative{
+    position: relative;
+}
+.home-brick-box .video .video-ul li a{
+    width: 296px;
+    height: 285px;
+    padding: 0;
+    margin-bottom: 14px;
+    text-align: center;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+.home-brick-box .video .video-ul li a:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+}
+.home-brick-box .video .video-ul li a video{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.home-brick-box .video .video-ul li a img{
+    position: relative;
+    width: 296px;
+    height: 180px;
+    margin: 0 0 28px 0;
+}
+/* 鼠标移入图片时 用~选择旁边的兄弟元素 */
+.home-brick-box .video .video-ul li a img:hover~span,
+.home-brick-box .video .video-ul li a span:hover{
+    border-color: #ff6700;
+    background-color: #ff6700;
+}
+.home-brick-box .video .video-ul li a span{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    width: 32px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    transition: all .2s;
+}
+.home-brick-box .video .video-ul li a span i{
+    font-size: 10px;
+    line-height: 20px;
+}
+.home-brick-box .video .video-ul li a h3{
+    margin: 0 14px 6px;
+    font-size: 14px;
+    color: #333;
+}
 /* 中心部分接收 */
 /* 身体区域结束 */
+
+/* 页脚区域开始 */
+footer .footer-top .top-top{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+footer .footer-top .top-top ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-top .top-top ul li{
+    width: 19.8%;
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+footer .footer-top .top-top ul li:first-of-type{
+    border-left: none;
+}
+footer .footer-top .top-top ul li a{
+    color: #616161;
+    transition: color .3s linear;
+}
+footer .footer-top .top-top ul li a:hover{
+    color: #ff6700;
+}
+footer .footer-top .top-top ul li a i{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: sub;
+}
+footer .footer-top .top-top ul li a .icon-15tianwuliyoutuihuo{
+    vertical-align: unset;
+}
+footer .footer-top .top-top ul li a .icon-icon-test{
+    font-size: 28px;
+    line-height: 28px;
+}
+footer .footer-top .top-bottom{
+    padding: 40px 0;
+}
+footer .footer-top .top-bottom dl{
+    float: left;
+    width: 160px;
+    height: 112px;
+}
+footer .footer-top .top-bottom dl dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+footer .footer-top .top-bottom dl dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+footer .footer-top .top-bottom dl dd a{
+    color: #757575;
+}
+footer .footer-top .top-bottom dl dd a:hover{
+    color: #ff6700;
+}
+footer .footer-top .top-bottom .contact{
+    float: right;
+    width: 251px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+footer .footer-top .top-bottom .contact p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+footer .footer-top .top-bottom .contact .phone{
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+footer .footer-top .top-bottom .contact .contact-a{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    background-color: #fff;
+    transition: all .5s;
+}
+footer .footer-top .top-bottom .contact .contact-a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+footer .footer-top .top-bottom .contact .contact-a i{
+    font-size: 12px;
+    margin-right: 4px;
+}
+footer .footer-top .top-bottom .contact .follow{
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+footer .footer-top .top-bottom .contact .follow a{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-top: -3px;
+}
+footer .footer-top .top-bottom .contact .follow a i{
+    font-size: 24px;
+}
+footer .footer-top .top-bottom .contact .follow a i:hover{
+    color: #ff6700;
+}
+footer .footer-top .top-bottom .contact .follow .wx{
+    position: relative;
+}
+footer .footer-top .top-bottom .contact .follow .wx img{
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: -65px;
+    width: 126px;
+    height: 126px;
+}
+footer .footer-top .top-bottom .contact .follow .wx i:hover~img{
+    display: block;
+}
+/* footer-bottom下面部分 */
+footer .footer-bottom .bottom-top p{
+    margin: 14px 0;
+}
+footer .footer-bottom .bottom-top p a{
+    color: #757575;
+}
+footer .footer-bottom .bottom-top p a:hover{
+    color: #ff6700;
+}
+footer .footer-bottom .bottom-top p span{
+    margin: 0 .25em;
+    font-family: sans-serif;
+}
+footer .footer-bottom .bottom-bottom a{
+    display: inline-block;
+}
+/* 隐藏 */
+footer .footer-bottom .slogan{
+    display: block;
+    text-indent: -9999px;
+    text-align: left;
+}
+/* 页脚区域结束 */
+
+/* 固定定位开始 */
+.fixed{
+    position: fixed;
+    z-index: 6;
+    right: 0;
+    bottom: 85px;
+}
+.fixed a{
+    position: relative;
+    display: block;
+    color: #757575;
+    width: 84px;
+    height: 92px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+    cursor: context-menu;
+    transition: color .5s;
+}
+.fixed a:last-of-type{
+    margin-top: 14px;
+}
+.fixed a:hover{
+    color: #ff6700;
+}
+.fixed a .icon{
+    width: 30px;
+    height: 30px;
+    margin: 18px auto 8px;
+}
+.fixed a .icon i{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.fixed a span{
+    cursor: auto;
+}
+/* 设置图片的位置 */
+.fixed a .pop-centent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    transition: opacity .3s;
+    transform: translateZ(0);
+    opacity: 0;
+    visibility: hidden;
+}
+.fixed a:hover .pop-centent{
+    transform: translate3d(-110%,0,0);
+    opacity: 1;
+    visibility: visible;
+}
+.fixed a .pop-centent::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -18px;
+    border: 10px solid transparent;
+    border-left-color: #fff;
+}
+.fixed a .pop-centent img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 6px auto;
+}
+.fixed a .pop-centent span{
+    display: block;
+    font-size: 19px;
+    line-height: 29px;
+    width: 82px;
+    margin: 14px auto 0;
+    color: #757575;
+    text-align: center;
+}
+/* 固定定位接收 */

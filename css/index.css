@@ -316,31 +316,25 @@ header .BannerWrapper a{
 }
 /* 导航栏下部分-轮播图 */
 .navigtion-two .container-rotation{
-    transform: translateY(-500px);
     position: absolute;
     overflow: hidden;
-    /* display: none; */
+    display: none;
     z-index: 2;
     width: 100%;
-    height: 0;
-    transition: height 1s .2s;
-    /* opacity: 0; */
+    height: 0px;
+    transition: height 1s;
     border-top: 1px solid #e0e0e0;
     background-color: #fff;
     box-shadow: 0 3px 4px rgba(0,0,0,.18);
 }
-.navigtion-two:hover .container-rotation{
-    transform: translateY(0px);
-    height: 230px;
-    /* display: block; */
-    /* opacity: 1; */
+.navigtion-two .container-rotation .container{
+    overflow: hidden;
 }
 .navigtion-two .container-rotation ul{
     display: flex;
     font-size: 12px;
-    transition: all 1s;
+    transition: all .5s;
     margin-left: 0%;
-    overflow: hidden;
 }
 .navigtion-two .container-rotation ul li a{
     position: relative;
@@ -363,11 +357,11 @@ header .BannerWrapper a{
 }
 .navigtion-two .container-rotation ul li .a:last-of-type::before{
     content: "";
-    height: 0;
+    background-color: transparent;
 }
-.navigtion-two .container-rotation ul li:nth-of-type(7n) a::before{
+.navigtion-two .container-rotation ul li:nth-of-type(6n+1) a::before{
     content: "";
-    height: 0;
+    background-color: transparent;
 }
 .navigtion-two .container-rotation ul li a img{
     margin: 0 auto 16px;
@@ -683,7 +677,6 @@ header .BannerWrapper a{
 }
 .home-main .container .home-flashsale .box-rotation .rt-rotation ul{
     display: flex;
-    margin-left: 0%;
     transition: all 1s;
 }
 .home-main .container .home-flashsale .box-rotation .rt-rotation ul li{
@@ -729,10 +722,6 @@ header .BannerWrapper a{
     cursor: pointer;
     transition: color .5s;
 }
-.home-main .container .home-flashsale .box-rotation .rt-button span:hover{
-    color: #ff6700;
-}
-
 /* 小广告-天天向上 */
 .home-banner-box{
     height: 120px;
@@ -783,9 +772,18 @@ header .BannerWrapper a{
 .home-brick-box  .box-bd .bd-left ul a,.home-brick-box  .box-bd .bd-left ul a img{
     display: block;
 }
+.home-brick-box  .box-bd .bd-right{
+    position: relative;
+}
 .home-brick-box  .box-bd .bd-right>ul{
     width: 992px;
     height: 614px;
+}
+.home-brick-box  .box-bd .bd-right ul~ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 .home-brick-box  .box-bd .bd-right ul li{
     float: left;

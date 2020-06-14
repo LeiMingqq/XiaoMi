@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米账号 - 登录</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/Login interface.css" />
+  </head>
+  <body>
+    <!-- 登录区域 -->
+    <div class="wrapper">
+      <!-- 导入一个背景网页 -->
+      <div class="bgiframe">
+        <iframe
+          style="height: 686px; width: 100%;"
+          src="Shopping.html"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <!-- 账号登录区域 -->
+      <div class="container">
+        <div class="layout">
+          <div class="main-content">
+            <div class="mainbox">
+              <!-- 登录标题 -->
+              <div class="sign-title">
+                <span class="sign-active" id="zhanghao">账号登录</span>
+                <span class="line"></span>
+                <span id="mima">扫码登录</span>
+              </div>
+              <!-- 账号登录 -->
+              <div style="display: block;" class="account">
+                <input type="text" name="text" id="">
+                <input type="password" name="password" id="">
+                <input type="submit" value="登录">
+                <div class="other_panel">
+                  <a href="">手机短信登录/注册</a>
+                  <a href="">立即注册</a>
+                  <span>|</span>
+                  <a href="">忘记密码？</a>
+                </div>
+                <!-- 其他登录方式 -->
+                <div class="other_login_type">
+                  <div class="oth_type_tit">
+                    <span>其他方式登录</span>
+                  </div>
+                  <!-- 登录类型 -->
+                  <div class="sns-login-links">
+                    <a class="qq" href="">
+                      <i></i>
+                    </a>
+                    <a class="weibo" href="">
+                      <i></i>
+                    </a>
+                    <a class="zhifubao" href="">
+                      <i></i>
+                    </a>
+                    <a class="weixin" href="">
+                      <i></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 扫码登录 -->
+              <div style="display: none;" class="scanning">
+                <div class="scanning-img">
+                  <img src="img/scanning-img.png" alt="">
+                </div>
+                <div class="scanning-tit">
+                  <p>扫码<span>小米商城APP</span>扫一扫</p>
+                  <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+      <ul>
+        <li><a class="active" href="">简体</a></li>
+        <span>|</span>
+        <li><a href="">繁体</a></li>
+        <span>|</span>
+        <li><a href="">English</a></li>
+        <span>|</span>
+        <li><a href="">常见问题</a></li>
+        <span>|</span>
+        <li><a href="">隐私政策</a></li>
+      </ul>
+      <p>小米公司版权所有-京ICP备10046444-<a href=""><i><img src="img/ghs.png" alt=""></i>京公网安备11010802020134号</a>-京ICP证110507号</p>
+    </footer>
+
+    <script>
+      var zhangHao = document.getElementById("zhanghao"),
+          miMa = document.getElementById("mima"),
+          account = document.getElementsByClassName("account")[0],//账号
+          scanning = document.querySelector(".scanning"),//扫码
+          active = document.querySelector(".sign-title");
+
+      // 扫码方法
+      miMa.onclick=function(){
+        active.children[0].className="";
+        active.children[2].className="sign-active";
+        account.style.display="none";
+        scanning.style.display="block";
+      }
+
+      // 账号方法
+      zhangHao.onclick=function(){
+        active.children[2].className="";
+        active.children[0].className="sign-active";
+        scanning.style.display="none";
+        account.style.display="block";
+      }
+    </script>
+  </body>
+</html>

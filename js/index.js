@@ -315,69 +315,7 @@ function testShi() {
         testTitle1(value);
     }
 
-    // 切换标签 3
-    function testTitle2(n) {
-        var active = document.getElementsByClassName("tab-active");
-        active[2].className = "";
-        tabList[2].children[n].className = "tab-active";
-        if (n == 1) {
-            bdRight[3].children[n].style.zIndex = "1";
-        } else {
-            bdRight[3].children[1].style.zIndex = "-1";
-        }
-    }
-    tabList[2].onmouseover = function (e) {
-        var children = Array.from(tabList[2].children);
-        var value = children.indexOf(e.target);
-        if (value == -1) {
-            return false;
-        }
-        testTitle2(value);
-    }
-
-    // 切换标签 4
-    function testTitle3(n) {
-        var active = document.getElementsByClassName("tab-active");
-        active[3].className = "";
-        tabList[3].children[n].className = "tab-active";
-        if (n == 1) {
-            bdRight[4].children[n].style.zIndex = "1";
-            bdRight[4].children[2].style.zIndex = "-1";//每次鼠标移入第二个，清除 3
-        } else if (n == 2) {
-            bdRight[4].children[n].style.zIndex = "2";
-        } else {
-            bdRight[4].children[1].style.zIndex = "-1";
-            bdRight[4].children[2].style.zIndex = "-1";
-        }
-    }
-    tabList[3].onmouseover = function (e) {
-        var children = Array.from(tabList[3].children);
-        var value = children.indexOf(e.target);
-        if (value == -1) {
-            return false;
-        }
-        testTitle3(value);
-    }
-
-    // 切换标签 5
-    function testTitle4(n) {
-        var active = document.getElementsByClassName("tab-active");
-        active[4].className = "";
-        tabList[4].children[n].className = "tab-active";
-        if (n == 1) {
-            bdRight[5].children[n].style.zIndex = "1";
-        } else {
-            bdRight[5].children[1].style.zIndex = "-1";
-        }
-    }
-    tabList[4].onmouseover = function (e) {
-        var children = Array.from(tabList[4].children);
-        var value = children.indexOf(e.target);
-        if (value == -1) {
-            return false;
-        }
-        testTitle4(value);
-    }
+    
 }
 
 // 执行方法

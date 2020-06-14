@@ -72,9 +72,8 @@
     height: 18px;
     margin: 0 20px 12px;
     font-size: 12px;
-    text-overflow: ellipsis;
     color: #b0b0b0;
-    overflow: hidden;
+    /* 超出范围不换行 */
     white-space: nowrap;
 }
 .content p span{

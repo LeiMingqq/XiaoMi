@@ -34,6 +34,7 @@
               <div style="display: block;" class="account">
                 <input type="text" name="text" id="">
                 <input type="password" name="password" id="">
+                <p><i></i>请输入账号！！！</p>
                 <input type="submit" value="登录">
                 <div class="other_panel">
                   <a href="">手机短信登录/注册</a>
@@ -97,6 +98,7 @@
     <script>
       var zhangHao = document.getElementById("zhanghao"),
           miMa = document.getElementById("mima"),
+          denglu = document.getElementsByTagName("input"),//账号和密码验证
           account = document.getElementsByClassName("account")[0],//账号
           scanning = document.querySelector(".scanning"),//扫码
           active = document.querySelector(".sign-title");
@@ -115,6 +117,20 @@
         active.children[0].className="sign-active";
         scanning.style.display="none";
         account.style.display="block";
+      }
+
+      // 验证密码和账号
+      var p = document.querySelector(".account p");
+      denglu[2].onclick=function(){
+        if(denglu[0].value==""){
+          p.style.display="inline-block";
+          p.innerHTML="请输入账号";
+        }else if(denglu[1].value==""){
+          p.style.display="inline-block";
+          p.innerHTML="请输入密码";
+        }else{
+          console.log("登录成功!!!")
+        }
       }
     </script>
   </body>
